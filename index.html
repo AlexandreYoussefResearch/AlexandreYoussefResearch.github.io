@@ -2,86 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Alexandre Youssef – Engineering & Applied Mathematics</title>
+  <title>Alexandre Youssef</title>
   <style>
     :root {
-      --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      --color-bg: #ffffff;
-      --color-text: #222222;
-      --color-accent: #4a2a8e;
-      --color-muted: #888888;
-      --border-color: #d6c8f0;
+      --accent: #732d9d;
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #666666;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: var(--font-main);
-      background-color: var(--color-bg);
-      color: var(--color-text);
       margin: 0;
-      line-height: 1.7;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
     }
 
     nav {
-      background-color: var(--color-accent);
-      padding: 12px 0;
-      text-align: center;
+      background: #111;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     nav a {
-      color: #ffffff;
-      margin: 0 15px;
+      color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    h1 {
-      font-size: 2.2rem;
-      border-bottom: 2px solid var(--border-color);
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-      color: #000000;
+    .section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
 
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 2.5rem;
-      color: #444;
+    #about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+    }
+
+    .about-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-text p {
+      margin: 0.8rem 0;
+    }
+
+    .about-photo {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .about-photo img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .accent {
+      color: var(--accent);
+      font-weight: bold;
     }
 
     .project {
       margin-bottom: 2rem;
     }
 
-    .footer {
-      font-size: 0.9rem;
-      color: var(--color-muted);
-      margin-top: 3rem;
-      border-top: 1px solid var(--border-color);
-      padding-top: 12px;
-      text-align: center;
+    .project a {
+      color: var(--accent);
+      text-decoration: none;
     }
 
-    .profile-photo {
-      text-align: center;
-      margin-bottom: 30px;
+    .project a:hover {
+      text-decoration: underline;
     }
 
-    .profile-photo img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    @media (max-width: 768px) {
+      #about {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .about-text {
+        padding: 0;
+      }
     }
   </style>
 </head>
@@ -92,70 +119,61 @@
     <a href="#projects">Projects</a>
   </nav>
 
-  <div class="container">
-    <h1>Alexandre Youssef</h1>
-
-    <div class="profile-photo">
+  <div id="about" class="section">
+    <div class="about-text">
+      <h1><strong>Alexandre</strong> Youssef</h1>
+      <p>Engineer in Applied Mathematics and Aerospace Engineering.</p>
+      <p>
+        I work in <span class="accent">quantitative finance</span> in Paris.  
+        Educated at <span class="accent">Imperial College London</span>,  
+        <span class="accent">École polytechnique de Louvain</span>, and  
+        <span class="accent">EPFL</span>.
+      </p>
+      <p>This site presents selected technical and research projects. Ongoing updates are on the way.</p>
+    </div>
+    <div class="about-photo">
       <img src="profile.jpg" alt="Alexandre Youssef">
+      <div style="margin-top: 10px; color: var(--accent); font-weight: bold;">Imperial / EPL / EPFL</div>
+    </div>
+  </div>
+
+  <div id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <strong>Mesh Deformation for Aerodynamics in Formula 1</strong><br>
+      Conducted at McLaren Racing (Imperial MSc Thesis).<br>
+      <a href="https://github.com/AlexandreYoussefResearch/thesis-imperial-mclaren" target="_blank">Repository →</a>
     </div>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Hi, I'm Alexandre — engineer in applied mathematics and aerospace engineering.<br>
-        I currently work in <strong>quantitative finance</strong> in Paris.<br>
-        I studied at 
-        <a href="https://www.imperial.ac.uk" target="_blank">Imperial College London</a> and the 
-        <a href="https://uclouvain.be" target="_blank">École polytechnique de Louvain</a>, with an academic exchange at 
-        <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a>.
-      </p>
-      <p>
-        This page presents a selection of public-facing academic and technical work — from high-performance computing to numerical simulation. New content is currently in development.
-      </p>
-    </section>
+    <div class="project">
+      <strong>3D Vortex Penalization Simulations (Murphy Framework)</strong><br>
+      HPC fluid dynamics project at MIT & EPL with MPI / GPU / Octree grids.<br>
+      <a href="https://github.com/AlexandreYoussefResearch/thesis-uclouvain-mit" target="_blank">Repository →</a>
+    </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <div class="project">
+      <strong>Parallel Conjugate Gradient Solver</strong><br>
+      Sparse linear solver (MPI + CUDA).<br>
+      <a href="https://github.com/AlexandreYoussefResearch/parallel-conjugate-gradient" target="_blank">Repository →</a>
+    </div>
 
-      <div class="project">
-        <strong>Mesh Deformation for Aerodynamics in Formula 1</strong><br>
-        Conducted at <strong>McLaren Racing</strong> as part of the MSc in Aeronautics at Imperial College London.<br>
-        <a href="https://github.com/AlexandreYoussefResearch/thesis-imperial-mclaren" target="_blank">Repository →</a>
-      </div>
+    <div class="project">
+      <strong>2D Diffusion Solver with Sparse Matrices</strong><br>
+      Explicit FDM + LU Decomposition.<br>
+      <a href="https://github.com/AlexandreYoussefResearch/sparse-matrix-diffusion" target="_blank">Repository →</a>
+    </div>
 
-      <div class="project">
-        <strong>3D Numerical Simulations with Vortex Penalization</strong><br>
-        Developed using the <strong>Murphy</strong> multiresolution framework (MPI, octree grid, GPU acceleration) at MIT & EPL.<br>
-        <a href="https://github.com/AlexandreYoussefResearch/thesis-uclouvain-mit" target="_blank">Repository →</a>
-      </div>
+    <div class="project">
+      <strong>Shallow Water Equations (Finite Volume)</strong><br>
+      Conservative scheme for wave propagation and shocks.<br>
+      <a href="https://github.com/AlexandreYoussefResearch/shallow-water-fvm" target="_blank">Repository →</a>
+    </div>
 
-      <div class="project">
-        <strong>Parallel Conjugate Gradient Solver</strong><br>
-        MPI and CUDA implementations for large sparse systems.<br>
-        <a href="https://github.com/AlexandreYoussefResearch/parallel-conjugate-gradient" target="_blank">Repository →</a>
-      </div>
-
-      <div class="project">
-        <strong>Sparse Diffusion Solver</strong><br>
-        Finite difference method with LU decomposition and sparse matrix handling.<br>
-        <a href="https://github.com/AlexandreYoussefResearch/sparse-matrix-diffusion" target="_blank">Repository →</a>
-      </div>
-
-      <div class="project">
-        <strong>Shallow Water Equation Solver</strong><br>
-        Finite volume implementation of the 2D shallow water system.<br>
-        <a href="https://github.com/AlexandreYoussefResearch/shallow-water-fvm" target="_blank">Repository →</a>
-      </div>
-
-      <div class="project">
-        <strong>Coming Soon – SaaS Pricing Tool</strong><br>
-        Development of a SaaS application using Django + React, focused on real-time strategy and competitive positioning.<br>
-        <a href="https://github.com/AlexandreYoussefResearch/AlexandreYoussefResearch.github.io" target="_blank">Preview →</a>
-      </div>
-    </section>
-
-    <div class="footer">
-      Contact: <a href="mailto:alexandre.youssef.pro@gmail.com">alexandre.youssef.pro@gmail.com</a>
+    <div class="project">
+      <strong>SaaS Pricing Tool (Coming Soon)</strong><br>
+      Web app with Django + React for smart pricing recommendations.<br>
+      <a href="https://github.com/AlexandreYoussefResearch/AlexandreYoussefResearch.github.io" target="_blank">Preview →</a>
     </div>
   </div>
 
