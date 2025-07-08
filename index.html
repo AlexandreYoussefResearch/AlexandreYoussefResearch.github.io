@@ -58,19 +58,18 @@
       padding-top: 12px;
     }
 
-  .profile-photo {
-    text-align: center;
-    margin: 30px auto;
-  }
-  
-  .profile-photo img {
-    width: 100%;
-    max-width: 320px; /* taille plus grande mais raisonnable */
-    height: auto;
-    border-radius: 10px; /* bords légèrement arrondis, pas circulaires */
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+    .profile-photo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-photo img {
+      width: 220px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
   </style>
 </head>
 <body>
@@ -89,42 +88,47 @@
     <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a>.
   </p>
   <p>
-    This page presents a selection of my public research contributions, from both academic and industrial collaborations.<br>
+    This page presents a selection of my public research and technical contributions.<br>
     New projects are currently in progress — stay tuned.
   </p>
 
-  <h2>[Master thesis] Mesh Deformation for Aerodynamics in Formula 1</h2>
+  <h2>Mesh Deformation for Aerodynamics in Formula 1</h2>
   <div class="project">
-    <strong>Development of Mesh Deformation Methods for External Aerodynamics Simulations</strong><br>
-    Conducted at <strong>McLaren Racing</strong> as part of the MSc in Aeronautics at Imperial College London.<br>
-    This repository contains the public version of the thesis report. All implementation details and internal results remain confidential.<br>
+    Development and comparison of PDE-based mesh deformation techniques for large displacements in F1 simulations.<br>
+    Conducted at McLaren Racing during my MSc in Aeronautics.<br>
     <a href="https://github.com/AlexandreYoussefResearch/thesis-imperial-mclaren" target="_blank">Repository →</a>
   </div>
 
-  <h2>[Master thesis] 3D Numerical Simulations with Vortex Penalization Methods</h2>
+  <h2>3D Flow Simulation Using Vorticity Penalization</h2>
   <div class="project">
-    <strong>Efficient and Accurate Simulations of Three-Dimensional Flows Past Obstacles with Vorticity-Based Penalization Methods</strong><br>
-    Conducted jointly at the <strong>Van Rees Lab (MIT)</strong> and the <strong>Thermodynamics & Fluid Mechanics Lab (École polytechnique de Louvain)</strong>.<br>
-    Implemented using the <strong>Murphy</strong> framework — a multiresolution C++ solver for PDEs with octree-based adaptive grids, parallelized via MPI and GPU acceleration.<br>
+    High-fidelity simulations of incompressible vortex-dominated flows using a custom multigrid C++ solver (Murphy framework), with adaptive refinement and MPI parallelism.<br>
+    Conducted jointly with MIT (Van Rees Lab).<br>
     <a href="https://github.com/AlexandreYoussefResearch/thesis-uclouvain-mit" target="_blank">Repository →</a>
   </div>
 
   <h2>Parallel Conjugate Gradient Solver</h2>
   <div class="project">
-    Implementation of a parallelized conjugate gradient method for solving large sparse linear systems, featuring both an MPI-based CPU version and a CUDA GPU version. Benchmarks highlight differences in scalability and performance.<br>
+    Implementation of distributed-memory and GPU-accelerated solvers for sparse symmetric linear systems.<br>
     <a href="https://github.com/AlexandreYoussefResearch/parallel-conjugate-gradient" target="_blank">Repository →</a>
   </div>
 
-  <h2>Sparse Diffusion Solver with Finite Difference Methods</h2>
+  <h2>2D Diffusion Solver (Finite Differences + Sparse Matrix)</h2>
   <div class="project">
-    Explicit time integration of the 2D heat equation using finite difference schemes. Features both Dirichlet and Neumann boundary handling and constructs the Laplacian using sparse matrices. Includes visualization and LU decomposition for validation.<br>
+    Simulation of the heat equation using explicit time-stepping, sparse matrix operators, and LU validation.<br>
     <a href="https://github.com/AlexandreYoussefResearch/sparse-matrix-diffusion" target="_blank">Repository →</a>
   </div>
 
-  <h2>Shallow Water Equation Solver</h2>
+  <h2>Shallow Water Solver (FVM)</h2>
   <div class="project">
-    Finite Volume Method solver for the 2D shallow water equations. Implements conservative schemes and boundary treatment for simulating wave propagation and hydraulic jumps.<br>
+    Finite volume method for shallow water equations, handling shock waves and boundary conditions in 2D.<br>
     <a href="https://github.com/AlexandreYoussefResearch/shallow-water-fvm" target="_blank">Repository →</a>
+  </div>
+
+  <h2>Coming Soon – SaaS Pricing Platform</h2>
+  <div class="project">
+    A Django + React based pricing tool designed to support intelligent and adaptive pricing strategies.<br>
+    Stay tuned!<br>
+    <a href="https://github.com/AlexandreYoussefResearch/AlexandreYoussefResearch.github.io" target="_blank">Preview →</a>
   </div>
 
   <div class="footer">
