@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alexandre Youssef – Projects</title>
+  <style>
+    :root {
+      --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      --color-bg: #ffffff;
+      --color-text: #222222;
+      --color-accent: #4a2a8e;
+      --color-muted: #888888;
+      --border-color: #d6c8f0;
+      --navbar-bg: #000000;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+      line-height: 1.7;
+    }
+
+    nav {
+      background-color: var(--navbar-bg);
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 30px 0 10px;
+      color: #000000;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2.5rem;
+      color: #444;
+    }
+
+    .project {
+      margin-bottom: 2rem;
+    }
+
+    .footer {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      margin-top: 3rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 12px;
+    }
+
+    a {
+      color: var(--color-accent);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><a href="index.html">About</a></div>
+    <div>
+      <a href="projects.html">Projects</a>
+    </div>
+  </nav>
+
+  <h1>Selected Projects</h1>
+
+  <h2>Mesh Deformation for Aerodynamics in Formula 1</h2>
+  <div class="project">
+    <strong>Development of Mesh Deformation Methods for External Aerodynamics Simulations</strong><br>
+    Conducted at <strong>McLaren Racing</strong> as part of the MSc in Aeronautics at Imperial College London.<br>
+    This repository contains the public version of the thesis report. All implementation details and internal results remain confidential.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/thesis-imperial-mclaren" target="_blank">Repository →</a>
+  </div>
+
+  <h2>3D Numerical Simulations with Vortex Penalization Methods</h2>
+  <div class="project">
+    <strong>Efficient and Accurate Simulations of Three-Dimensional Flows Past Obstacles with Vorticity-Based Penalization Methods</strong><br>
+    Conducted jointly at the <strong>Van Rees Lab (MIT)</strong> and the <strong>Thermodynamics & Fluid Mechanics Lab (École polytechnique de Louvain)</strong>.<br>
+    Implemented using the <strong>Murphy</strong> framework — a multiresolution C++ solver for PDEs with octree-based adaptive grids, parallelized via MPI and GPU acceleration.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/thesis-uclouvain-mit" target="_blank">Repository →</a>
+  </div>
+
+  <h2>Parallel Conjugate Gradient Solver</h2>
+  <div class="project">
+    Implementation of a parallelized conjugate gradient method for solving large sparse linear systems, featuring both an MPI-based CPU version and a CUDA GPU version. Benchmarks highlight differences in scalability and performance.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/parallel-conjugate-gradient" target="_blank">Repository →</a>
+  </div>
+
+  <h2>Sparse Diffusion Solver with Finite Difference Methods</h2>
+  <div class="project">
+    Explicit time integration of the 2D heat equation using finite difference schemes. Features both Dirichlet and Neumann boundary handling and constructs the Laplacian using sparse matrices. Includes visualization and LU decomposition for validation.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/sparse-matrix-diffusion" target="_blank">Repository →</a>
+  </div>
+
+  <h2>Shallow Water Equation Solver</h2>
+  <div class="project">
+    Finite Volume Method solver for the 2D shallow water equations. Implements conservative schemes and boundary treatment for simulating wave propagation and hydraulic jumps.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/shallow-water-fvm" target="_blank">Repository →</a>
+  </div>
+
+  <h2>Randomized Point Location Algorithm</h2>
+  <div class="project">
+    C implementation of the randomized incremental algorithm for planar point location using trapezoidal maps and search DAGs. Includes animated output and custom input formats.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/point-location" target="_blank">Repository →</a>
+  </div>
+
+  <h2>Pricing SaaS Tool (WIP)</h2>
+  <div class="project">
+    Development of a full-stack SaaS pricing intelligence platform using <strong>Django</strong> (backend) and <strong>React</strong> (frontend). Designed to support dynamic, competitive, and margin-aware pricing strategies for small businesses. Full deployment to follow.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/AlexandreYoussefResearch.github.io" target="_blank">Repository →</a>
+  </div>
+
+  <div class="footer">
+    Contact: <a href="mailto:alexandre.youssef.pro@gmail.com">alexandre.youssef.pro@gmail.com</a>
+  </div>
+
+</body>
+</html>
