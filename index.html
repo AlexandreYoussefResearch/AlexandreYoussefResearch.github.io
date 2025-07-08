@@ -27,7 +27,7 @@
       font-size: 2.2rem;
       border-bottom: 2px solid var(--border-color);
       padding-bottom: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: #000000;
     }
 
@@ -57,11 +57,29 @@
       border-top: 1px solid var(--border-color);
       padding-top: 12px;
     }
+
+    .profile-photo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-photo img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
   </style>
 </head>
 <body>
 
   <h1>Alexandre Youssef</h1>
+
+  <div class="profile-photo">
+    <img src="profile.jpg" alt="Alexandre Youssef">
+  </div>
+
   <p>
     Hey there, I'm Alexandre — Engineer in Applied Mathematics and Aerospace Engineering.<br>
     Currently working in <strong>quantitative finance</strong>, I am an alumnus of 
@@ -70,10 +88,11 @@
     <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a>.
   </p>
   <p>
-    This page presents a selection of my public research contributions, from both academic and industrial collaborations.
+    This page presents a selection of my public research contributions, from both academic and industrial collaborations.<br>
+    New projects are currently in progress — stay tuned.
   </p>
 
-  <h2>MSc Thesis – Imperial College London</h2>
+  <h2>Mesh Deformation for Aerodynamics</h2>
   <div class="project">
     <strong>Development of Mesh Deformation Methods for External Aerodynamics Simulations</strong><br>
     Conducted at <strong>McLaren Racing</strong> as part of the MSc in Aeronautics at Imperial College London.<br>
@@ -81,33 +100,12 @@
     <a href="https://github.com/AlexandreYoussefResearch/thesis-imperial-mclaren" target="_blank">Repository →</a>
   </div>
 
-  <h2>MSc Thesis – École polytechnique de Louvain & MIT</h2>
+  <h2>3D Flow Simulations with Penalization</h2>
   <div class="project">
     <strong>Efficient and Accurate Simulations of Three-Dimensional Flows Past Obstacles with Vorticity-Based Penalization Methods</strong><br>
     Conducted jointly at the <strong>Van Rees Lab (MIT)</strong> and the <strong>Thermodynamics & Fluid Mechanics Lab (École polytechnique de Louvain)</strong>.<br>
     This repository contains the public version of the thesis report. All implementation details remain confidential.<br>
     <a href="https://github.com/AlexandreYoussefResearch/thesis-uclouvain-mit" target="_blank">Repository →</a>
-  </div>
-
-  <h2>High-Performance Solvers</h2>
-  <div class="project">
-    <strong>Parallelized Conjugate Gradient Solver</strong><br>
-    Implementation and benchmarking of MPI-based and CUDA-based solvers for large sparse linear systems.<br>
-    <a href="https://github.com/AlexandreYoussefResearch/parallel-conjugate-gradient" target="_blank">Repository →</a>
-  </div>
-
-  <h2>Geometric Algorithms</h2>
-  <div class="project">
-    <strong>Point Location using Trapezoidal Maps</strong><br>
-    Randomized incremental construction of a search structure for planar subdivision queries.<br>
-    <a href="https://github.com/AlexandreYoussefResearch/point-location-trapezoidal-map" target="_blank">Repository →</a>
-  </div>
-
-  <h2>Hyperbolic PDEs</h2>
-  <div class="project">
-    <strong>Shallow Water Equations with Finite Volume Schemes</strong><br>
-    Numerical simulation of wave propagation using explicit finite volume methods on 1D domains.<br>
-    <a href="https://github.com/AlexandreYoussefResearch/shallow-water-fvm" target="_blank">Repository →</a>
   </div>
 
   <div class="footer">
