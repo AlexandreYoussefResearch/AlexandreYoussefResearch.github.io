@@ -6,10 +6,11 @@
   <style>
     :root {
       --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      --color-bg: #fff;
-      --color-text: #222;
-      --color-accent: #0056b3;
-      --color-muted: #777;
+      --color-bg: #ffffff;
+      --color-text: #222222;
+      --color-accent: #6c3fc7;
+      --color-muted: #888888;
+      --border-color: #e2d9f3;
     }
 
     body {
@@ -24,9 +25,10 @@
 
     h1 {
       font-size: 2.2rem;
-      border-bottom: 2px solid #eee;
+      border-bottom: 2px solid var(--border-color);
       padding-bottom: 10px;
       margin-bottom: 30px;
+      color: var(--color-accent);
     }
 
     h2 {
@@ -52,7 +54,7 @@
       font-size: 0.9rem;
       color: var(--color-muted);
       margin-top: 3rem;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--border-color);
       padding-top: 12px;
     }
   </style>
@@ -62,13 +64,16 @@
   <h1>Alexandre Youssef</h1>
   <p>
     Hey there, I'm Alexandre — Engineer in Applied Mathematics and Aerospace Engineering.<br>
-    Currently working in <strong>quantitative finance</strong>, I am an <strong>Imperial College London</strong> and <strong>UCLouvain</strong> alumnus.
+    Currently working in <strong>quantitative finance</strong>, I am an alumnus of 
+    <a href="https://www.imperial.ac.uk" target="_blank">Imperial College London</a> and the 
+    <a href="https://uclouvain.be" target="_blank">École polytechnique de Louvain</a>, with an academic exchange in mathematics at 
+    <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a>.
   </p>
   <p>
-    This page presents my public research contributions, both from academia and industry.
+    This page presents a selection of my public research contributions, from both academic and industrial collaborations.
   </p>
 
-  <h2>MSc Thesis – Imperial College London</h2>
+  <h2>Mesh Deformation for Aerodynamics</h2>
   <div class="project">
     <strong>Development of Mesh Deformation Methods for External Aerodynamics Simulations</strong><br>
     Conducted at <strong>McLaren Racing</strong> as part of the MSc in Aeronautics at Imperial College London.<br>
@@ -76,30 +81,28 @@
     <a href="https://github.com/AlexandreYoussefResearch/thesis-imperial-mclaren" target="_blank">Repository →</a>
   </div>
 
-  <h2>MSc Thesis – UCLouvain & MIT</h2>
+  <h2>Vorticity-Based Penalization for 3D Flows</h2>
   <div class="project">
     <strong>Efficient and Accurate Simulations of Three-Dimensional Flows Past Obstacles with Vorticity-Based Penalization Methods</strong><br>
-    Conducted jointly at the <strong>Van Rees Lab (MIT)</strong> and the <strong>Thermodynamics & Fluid Mechanics Lab (UCLouvain)</strong> as part of the MSc in Applied Mathematics at the École Polytechnique de Louvain.<br>
+    Conducted jointly at the <strong>Van Rees Lab (MIT)</strong> and the <strong>Thermodynamics & Fluid Mechanics Lab (École polytechnique de Louvain)</strong>.<br>
     This repository contains the public version of the thesis report. All implementation details remain confidential.<br>
     <a href="https://github.com/AlexandreYoussefResearch/thesis-uclouvain-mit" target="_blank">Repository →</a>
   </div>
 
-  <h2>Scientific Computing Project – EPFL</h2>
+  <h2>Parallel Conjugate Gradient Solver</h2>
   <div class="project">
-    <strong>Parallelized Conjugate Gradient Solver</strong><br>
-    Developed during a high-performance computing course at <strong>EPFL</strong>. This project implements and compares two parallel solvers for large, sparse, symmetric positive-definite systems:<br>
-    - A distributed-memory <strong>MPI-based CPU version</strong><br>
-    - A <strong>GPU-accelerated CUDA version</strong> with custom kernels<br>
-    Both versions are benchmarked and analyzed across multiple dimensions of scalability and performance.<br>
+    <strong>Parallel implementation of the Conjugate Gradient algorithm</strong><br>
+    This project compares two high-performance implementations for solving large symmetric positive-definite systems:<br>
+    - A distributed-memory CPU version using MPI<br>
+    - A GPU-accelerated version using CUDA<br>
+    Both versions are benchmarked for scalability and speed.<br>
     <a href="https://github.com/AlexandreYoussefResearch/parallel-conjugate-gradient" target="_blank">Repository →</a>
   </div>
 
-  <h2>Numerical Methods – EPFL</h2>
+  <h2>Shallow Water Equation Solver</h2>
   <div class="project">
-    <strong>Shallow Water Equations – Finite Volume Methods</strong><br>
-    Developed at <strong>EPFL</strong> as part of the Numerical Methods for Conservation Laws course.<br>
-    This project compares two classical schemes — Lax-Friedrichs and Godunov with Roe linearization — for solving the 1D Saint-Venant equations using finite volume methods.<br>
-    The goal is to assess their behavior across test cases involving wave propagation, shocks, and convergence analysis.<br>
+    <strong>1D Finite Volume Simulation of the Saint-Venant Equations</strong><br>
+    Numerical solution of shallow water equations using two classical schemes: Lax-Friedrichs and Godunov with Roe linearization. The solver compares accuracy and stability across discontinuities.<br>
     <a href="https://github.com/AlexandreYoussefResearch/shallow-water-fvm" target="_blank">Repository →</a>
   </div>
 
