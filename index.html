@@ -8,9 +8,9 @@
       --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       --color-bg: #ffffff;
       --color-text: #222222;
-      --color-accent: #6c3fc7;
+      --color-accent: #4a2a8e;
       --color-muted: #888888;
-      --border-color: #e2d9f3;
+      --border-color: #d6c8f0;
     }
 
     body {
@@ -82,7 +82,7 @@
 
   <p>
     Hey there, I'm Alexandre — Engineer in Applied Mathematics and Aerospace Engineering.<br>
-    Currently working in <strong>quantitative finance</strong>, I am an alumnus of 
+    Currently working in <strong>quantitative finance</strong> in Paris, I am an alumnus of 
     <a href="https://www.imperial.ac.uk" target="_blank">Imperial College London</a> and the 
     <a href="https://uclouvain.be" target="_blank">École polytechnique de Louvain</a>, with an academic exchange in mathematics at 
     <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a>.
@@ -92,7 +92,7 @@
     New projects are currently in progress — stay tuned.
   </p>
 
-  <h2>Mesh Deformation for Aerodynamics</h2>
+  <h2>Mesh Deformation for Aerodynamics in Formula 1</h2>
   <div class="project">
     <strong>Development of Mesh Deformation Methods for External Aerodynamics Simulations</strong><br>
     Conducted at <strong>McLaren Racing</strong> as part of the MSc in Aeronautics at Imperial College London.<br>
@@ -100,12 +100,30 @@
     <a href="https://github.com/AlexandreYoussefResearch/thesis-imperial-mclaren" target="_blank">Repository →</a>
   </div>
 
-  <h2>3D Flow Simulations with Penalization</h2>
+  <h2>3D Numerical Simulations with Vortex Penalization Methods</h2>
   <div class="project">
     <strong>Efficient and Accurate Simulations of Three-Dimensional Flows Past Obstacles with Vorticity-Based Penalization Methods</strong><br>
     Conducted jointly at the <strong>Van Rees Lab (MIT)</strong> and the <strong>Thermodynamics & Fluid Mechanics Lab (École polytechnique de Louvain)</strong>.<br>
-    This repository contains the public version of the thesis report. All implementation details remain confidential.<br>
+    Implemented using the <strong>Murphy</strong> framework — a multiresolution C++ solver for PDEs with octree-based adaptive grids, parallelized via MPI and GPU acceleration.<br>
     <a href="https://github.com/AlexandreYoussefResearch/thesis-uclouvain-mit" target="_blank">Repository →</a>
+  </div>
+
+  <h2>Parallel Conjugate Gradient Solver</h2>
+  <div class="project">
+    Implementation of a parallelized conjugate gradient method for solving large sparse linear systems, featuring both an MPI-based CPU version and a CUDA GPU version. Benchmarks highlight differences in scalability and performance.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/parallel-conjugate-gradient" target="_blank">Repository →</a>
+  </div>
+
+  <h2>Randomized Point Location Algorithm</h2>
+  <div class="project">
+    C implementation of the randomized incremental algorithm for planar point location using trapezoidal maps and search DAGs. Includes animated output and custom input formats.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/point-location" target="_blank">Repository →</a>
+  </div>
+
+  <h2>Shallow Water Equation Solver</h2>
+  <div class="project">
+    Finite Volume Method solver for the 2D shallow water equations. Implements conservative schemes and boundary treatment for simulating wave propagation and hydraulic jumps.<br>
+    <a href="https://github.com/AlexandreYoussefResearch/shallow-water-fvm" target="_blank">Repository →</a>
   </div>
 
   <div class="footer">
