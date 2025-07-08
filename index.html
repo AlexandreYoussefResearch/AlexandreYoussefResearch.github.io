@@ -58,18 +58,19 @@
       padding-top: 12px;
     }
 
-    .profile-photo {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .profile-photo img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
+  .profile-photo {
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .profile-photo img {
+    width: 100%;
+    max-width: 320px; /* taille plus grande mais raisonnable */
+    height: auto;
+    border-radius: 10px; /* bords légèrement arrondis, pas circulaires */
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
   </style>
 </head>
 <body>
