@@ -42,31 +42,38 @@
       text-decoration: underline;
     }
 
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 5px;
+    .header {
       text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
 
     .subtitle {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #555;
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 30px;
+      margin-top: 5px;
     }
 
     .profile-photo {
-      text-align: center;
-      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
     }
 
     .profile-photo img {
-      width: 180px;
-      height: 180px;
+      width: 200px;
+      height: 200px;
       object-fit: cover;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-      border-radius: 0; /* carré sans arrondi */
+    }
+
+    .bio {
+      text-align: justify;
+      font-size: 1.05rem;
     }
 
     .footer {
@@ -81,29 +88,37 @@
 </head>
 <body>
   <nav>
-    <div><a href="index.html">About</a></div>
-    <div><a href="projects.html">Projects</a></div>
+    <a href="index.html">About</a>
+    <a href="projects.html">Projects</a>
   </nav>
 
-  <h1>Alexandre Youssef</h1>
-  <p class="subtitle">Quantitative Analyst</p>
+  <div class="header">
+    <h1>Alexandre Youssef</h1>
+    <div class="subtitle">Quantitative Analyst</div>
+  </div>
 
   <div class="profile-photo">
     <img src="profile.jpg" alt="Alexandre Youssef" />
   </div>
 
-  <p>
-    Hey there, I'm Alexandre — Engineer in Applied Mathematics and Aerospace Engineering.<br />
-    Currently working in <strong>quantitative finance</strong> in Paris, I am an alumnus of
-    <a href="https://www.imperial.ac.uk" target="_blank">Imperial College London</a> and the
-    <a href="https://uclouvain.be" target="_blank">École polytechnique de Louvain</a>, with an academic exchange in mathematics at
-    <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a>.
-  </p>
+  <div class="bio">
+    <p>
+      Hey there, I'm Alexandre — Engineer in Applied Mathematics and Aerospace Engineering.
+      Currently working in <strong>quantitative finance</strong> in Paris, I am an alumnus of
+      <a href="https://www.imperial.ac.uk" target="_blank">Imperial College London</a> and the
+      <a href="https://uclouvain.be" target="_blank">École polytechnique de Louvain</a>, with an academic exchange in mathematics at
+      <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a>.
+    </p>
 
-  <p>
-    This website presents a selection of my public research contributions and technical projects,
-    developed across academic and industrial settings.
-  </p>
+    <p>
+      My work spans scientific computing, fluid dynamics, optimization and AI, with a recent focus on applying engineering principles to
+      finance, technology, and real-world decision-making.
+    </p>
+
+    <p>
+      This website presents a selection of my public research contributions and technical projects, developed across academic and industrial settings.
+    </p>
+  </div>
 
   <div class="footer">
     Contact: <a href="mailto:alexandre.youssef.pro@gmail.com">alexandre.youssef.pro@gmail.com</a>
