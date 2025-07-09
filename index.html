@@ -26,20 +26,37 @@
     nav {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 60px;
       margin-bottom: 40px;
+      padding-bottom: 16px;
       border-bottom: 1px solid var(--border-color);
-      padding-bottom: 12px;
     }
 
     nav a {
+      position: relative;
       text-decoration: none;
-      color: var(--color-accent);
-      font-weight: bold;
+      color: var(--color-text);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 0;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-accent);
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after,
+    nav a.active::after {
+      width: 100%;
     }
 
     .header {
@@ -88,7 +105,7 @@
 </head>
 <body>
   <nav>
-    <a href="index.html">About</a>
+    <a href="index.html" class="active">About</a>
     <a href="projects.html">Projects</a>
   </nav>
 
